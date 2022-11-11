@@ -56,7 +56,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: tputbrese.azurecr.io/tap1.3-apps/spring-music-default@sha256:8952ee64a95efb407cb51b22cc6f8417c25b969e578617ae0bc737a6baa4a96e
+        image: tputbrese.azurecr.io/tap1.3-apps/spring-music-default@sha256:e464f33509ba4df9593110bc741e2e72477ae51e619e9a473650f9f8cb1e2bbb
         livenessProbe:
           httpGet:
             path: /livez
