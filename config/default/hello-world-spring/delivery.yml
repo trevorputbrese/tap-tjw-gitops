@@ -48,7 +48,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: tputbrese.azurecr.io/tap1.3-apps/hello-world-spring-default@sha256:99855102428976505c271c70972f2f0b91c445f4422837df771437e036241706
+        image: tputbrese.azurecr.io/tap1.3-apps/hello-world-spring-default@sha256:5977b0fcaa2f3825953335d63ce43d0e17ae0e93ac554bdaa8dd1163c9200b06
         livenessProbe:
           httpGet:
             path: /livez
